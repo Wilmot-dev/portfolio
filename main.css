@@ -1,17 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 nav {
   font-family: "Mr Bedfort";
-  font-size: 20px;
+  font-size: 2rem;
 }
 nav .logo {
   color: #D63D3D;
-  font-size: 30px;
+  font-size: 3rem;
+}
+
+.cover-rect {
+  color: #333333;
+}
+.cover-rect .cover-rect__name {
+  font-size: 3rem;
+  font-family: "Mr Bedfort";
+  color: #D63D3D;
+}
+.cover-rect .cover-rect__job {
+  font-size: 2rem;
+  font-family: "Josefin Slab";
+}
+.cover-rect .cover-rect__icon {
+  color: #D63D3D;
+  font-size: 1rem;
+}
+.cover-rect .cover-rect__place {
+  font-size: 1rem;
+}
+
+.cover-page__arrow {
+  color: #D63D3D;
+  font-size: 5rem;
+  filter: blur(2px);
+}
+
+@media screen and (min-width: 740px) {
+  nav {
+    font-size: 4rem;
+  }
+  nav .logo {
+    font-size: 5rem;
+  }
+
+  .cover-rect .cover-rect__name {
+    font-size: 6rem;
+  }
+  .cover-rect .cover-rect__job {
+    font-size: 5rem;
+  }
+  .cover-rect .cover-rect__icon {
+    font-size: 3rem;
+  }
+  .cover-rect .cover-rect__place {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  nav {
+    font-size: 6rem;
+  }
+  nav .logo {
+    font-size: 7rem;
+  }
+
+  .cover-rect .cover-rect__name {
+    font-size: 11rem;
+  }
+  .cover-rect .cover-rect__job {
+    font-size: 9rem;
+  }
+  .cover-rect .cover-rect__icon {
+    font-size: 6rem;
+  }
+  .cover-rect .cover-rect__place {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 2000px) {
+  nav {
+    font-size: 8rem;
+  }
+  nav .logo {
+    font-size: 9rem;
+  }
+
+  .cover-rect .cover-rect__name {
+    font-size: 15rem;
+  }
+  .cover-rect .cover-rect__job {
+    font-size: 12rem;
+  }
+  .cover-rect .cover-rect__icon {
+    font-size: 8rem;
+  }
+  .cover-rect .cover-rect__place {
+    font-size: 8rem;
+  }
+}
+/* Rectangle 1 */
+.cover-rect {
+  width: 60%;
+  height: 40vh;
+  background-color: rgba(215, 215, 215, 0.6);
+  box-shadow: 0 0 10px 10px rgba(215, 215, 215, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
 nav {
@@ -29,4 +136,20 @@ nav ul {
   list-style: none;
   width: 55vw;
   justify-content: space-between;
+}
+
+header {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("jhbskyline.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background-color: #fffdfb;
 }

@@ -1,0 +1,11 @@
+header {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("jhbskyline.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}

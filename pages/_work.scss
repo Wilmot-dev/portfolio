@@ -1,0 +1,18 @@
+.work-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+  .red-line--left {
+    justify-self: start;
+  }
+  .red-line--right {
+    justify-self: end;
+  }
+  .work-box--left {
+    justify-self: start;
+  }
+  .work-box--right {
+    justify-self: end;
+  }
+
+}

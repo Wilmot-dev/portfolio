@@ -37,6 +37,32 @@ nav .logo {
 }
 .cover-rect .cover-rect__place {
   font-size: 1rem;
+  font-family: "Josefin Slab";
+}
+
+.work-page .work-page__heading {
+  font-family: "Mr Bedfort";
+  color: #333333;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+.work-page .work-box .work-box__title {
+  font-family: "Josefin Slab";
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.work-page .work-box .work-box__description {
+  font-family: "Josefin Slab";
+  color: #333333;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.work-page .work-box .work-box__icon {
+  color: #D63D3D;
+  font-size: 2rem;
+  opacity: 0.8;
 }
 
 @media screen and (min-width: 740px) {
@@ -115,6 +141,38 @@ nav .logo {
   text-align: center;
 }
 
+.red-line {
+  width: 70%;
+  height: 5px;
+  background-color: #D63D3D;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.work-box {
+  width: 80%;
+  height: 300px;
+  background-color: rgba(215, 215, 215, 0.6);
+  margin: 15px;
+  box-shadow: 0 0 5px 5px rgba(215, 215, 215, 0.6);
+}
+
+.work-box__img {
+  background-color: pink;
+  height: 135px;
+  width: 270px;
+  border: none;
+}
+
+.work-box__btn {
+  font-family: "Josefin Slab";
+  color: #333333;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  width: 70%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -142,6 +200,70 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.work-box {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+}
+.work-box .work-box__title {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+.work-box .work-box__description {
+  grid-column: 2/4;
+  grid-row: 2/5;
+  align-self: center;
+  justify-self: center;
+}
+.work-box .work-box__btn {
+  grid-row: 6/7;
+}
+.work-box .work-box__btn--code {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+.work-box .work-box__btn--website {
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: center;
+}
+.work-box .work-box__icons {
+  grid-column: 1/2;
+  grid-row: 2/6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.work-box .work-box__img {
+  grid-column: 1/4;
+  grid-row: 7/13;
+  align-self: center;
+  justify-self: center;
+}
+
+.work-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+}
+.work-page .red-line--left {
+  justify-self: start;
+}
+.work-page .red-line--right {
+  justify-self: end;
+}
+.work-page .work-box--left {
+  justify-self: start;
+}
+.work-page .work-box--right {
+  justify-self: end;
 }
 
 body {

@@ -10,3 +10,8 @@
   align-content: center;
   text-align: center;
 }
+
+.red-line {
+  width: 250px;
+  height: 30px;
+}

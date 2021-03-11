@@ -5,8 +5,13 @@
 
 @import 'components/cover';
 @import 'components/shapes';
+@import 'components/image';
+@import 'components/buttons';
 
 @import 'layout/navigation';
 @import 'layout/header';
+@import 'layout/workbox';
+
+@import 'pages/work';
 
 @import 'themes/background';

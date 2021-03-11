@@ -1,0 +1,17 @@
+.work-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px;
+}
+.work-page .red-line--left {
+  justify-self: start;
+}
+.work-page .red-line--right {
+  justify-self: end;
+}
+.work-page .work-box--left {
+  justify-self: start;
+}
+.work-page .work-box--right {
+  justify-self: end;
+}

@@ -1,0 +1,38 @@
+.about-page .about-page__heading {
+  margin-top: 50px;
+  text-align: center;
+}
+.about-page .about-page__subheading--skill {
+  text-align: left;
+}
+.about-page .about-page__subheading--cert {
+  text-align: right;
+}
+.about-page .about-page__subheading {
+  padding: 10px;
+}
+.about-page .about-page__skills {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-self: center;
+  justify-self: center;
+}
+.about-page .about-page__skills .about-page__skill {
+  padding: 10px;
+}
+.about-page .about-page__certifications {
+  padding: 10px;
+  text-align: center;
+}
+.about-page .about-page__dot1 {
+  text-align: left;
+}
+.about-page .about-page__dot2 {
+  text-align: right;
+  width: 96%;
+}
+.about-page .about-page__dots {
+  text-shadow: 0px 2px #bdbdbd;
+  text-align: right;
+}

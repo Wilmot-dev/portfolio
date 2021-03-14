@@ -65,6 +65,39 @@ nav .logo {
   opacity: 0.8;
 }
 
+.about-page .about-page__heading {
+  font-family: "Mr Bedfort";
+  color: #D63D3D;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.about-page .about-page__paragraph {
+  font-family: "Josefin Slab";
+  color: #fffdfb;
+  font-size: 1.25rem;
+}
+.about-page .about-page__subheading {
+  font-family: "Mr Bedfort";
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.about-page .about-page__skills {
+  color: #D63D3D;
+  opacity: 0.8;
+  font-size: 2rem;
+}
+.about-page .about-page__dots {
+  color: #D63D3D;
+  font-size: 1rem;
+}
+.about-page .about-page__certifications {
+  font-family: "Josefin Slab";
+  color: #333333;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
 @media screen and (min-width: 740px) {
   nav {
     font-size: 4rem;
@@ -154,6 +187,25 @@ nav .logo {
   height: 300px;
   background-color: rgba(215, 215, 215, 0.6);
   margin: 15px;
+  box-shadow: 0 0 5px 5px rgba(215, 215, 215, 0.6);
+}
+
+.about-page__rect {
+  background-color: #D63D3D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
+  height: 270px;
+}
+.about-page__rect .about-page__paragraph {
+  text-align: center;
+  padding: 30px;
+}
+
+.about-page__rect2 {
+  background-color: rgba(215, 215, 215, 0.6);
+  margin: 15px 30px;
   box-shadow: 0 0 5px 5px rgba(215, 215, 215, 0.6);
 }
 
@@ -264,6 +316,45 @@ header {
 }
 .work-page .work-box--right {
   justify-self: end;
+}
+
+.about-page .about-page__heading {
+  margin-top: 50px;
+  text-align: center;
+}
+.about-page .about-page__subheading--skill {
+  text-align: left;
+}
+.about-page .about-page__subheading--cert {
+  text-align: right;
+}
+.about-page .about-page__subheading {
+  padding: 10px;
+}
+.about-page .about-page__skills {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-self: center;
+  justify-self: center;
+}
+.about-page .about-page__skills .about-page__skill {
+  padding: 10px;
+}
+.about-page .about-page__certifications {
+  padding: 10px;
+  text-align: center;
+}
+.about-page .about-page__dot1 {
+  text-align: left;
+}
+.about-page .about-page__dot2 {
+  text-align: right;
+  width: 96%;
+}
+.about-page .about-page__dots {
+  text-shadow: 0px 2px #bdbdbd;
+  text-align: right;
 }
 
 body {

@@ -61,6 +61,41 @@ nav {
   }
 }
 
+.about-page {
+  .about-page__heading {
+    font-family: $main-font;
+    color: $red-colour;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .about-page__paragraph {
+    font-family: $second-font;
+    color: $background-colour;
+    font-size: 1.25rem;
+  }
+  .about-page__subheading {
+    font-family: $main-font;
+    color: $black-color;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .about-page__skills {
+    color: $red-colour;
+    opacity: 0.8;
+    font-size: 2rem;
+  }
+  .about-page__dots {
+    color: $red-colour;
+    font-size: 1rem;
+  }
+  .about-page__certifications {
+    font-family: $second-font;
+    color: $black-color;
+    list-style: none;
+    font-size: 1.25rem;
+  }
+}
+
 // .cover-page__arrow {
 //   color: $red-colour;
 //   font-size: 5rem;

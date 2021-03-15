@@ -1,0 +1,11 @@
+.copy-right-block {
+  background-color: $red-colour;
+  box-shadow: 0 0 5px 5px $red-colour;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .copy-right-block__words {
+    padding: 5px;
+  }
+}

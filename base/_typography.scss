@@ -66,7 +66,7 @@ nav {
     font-family: $main-font;
     color: $red-colour;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .about-page__paragraph {
     font-family: $second-font;
@@ -96,77 +96,101 @@ nav {
   }
 }
 
+.contact-page {
+  .contact-page__title {
+    font-family: $main-font;
+    color: $black-color;
+    font-size: 2rem; 
+    font-weight: 400;
+  }
+  .contact-page__icons {
+    color: $red-colour;
+    opacity: 0.8;
+    font-size: 3rem;
+  }
+}
+
+.copy-right-block {
+  .copy-right-block__icon {
+    color: $background-colour;
+  }
+  .copy-right-block__words {
+    color: $background-colour;
+    font-family: $second-font;
+  }
+}
+
 // .cover-page__arrow {
 //   color: $red-colour;
 //   font-size: 5rem;
 //   filter: blur(2px);
 // }
 
-@media screen and (min-width: 740px) {
-  nav {
-    font-size: 4rem;
-    .logo {
-      font-size: 5rem;
-    }
-  }
-  .cover-rect {
-    .cover-rect__name {
-      font-size: 6rem;
-    }
-    .cover-rect__job{
-      font-size: 5rem;
-    }
-    .cover-rect__icon {
-      font-size: 3rem;
-    }
-    .cover-rect__place {
-      font-size: 3rem;
-    }  
-  }
-}
+// @media screen and (min-width: 740px) {
+//   nav {
+//     font-size: 4rem;
+//     .logo {
+//       font-size: 5rem;
+//     }
+//   }
+//   .cover-rect {
+//     .cover-rect__name {
+//       font-size: 6rem;
+//     }
+//     .cover-rect__job{
+//       font-size: 5rem;
+//     }
+//     .cover-rect__icon {
+//       font-size: 3rem;
+//     }
+//     .cover-rect__place {
+//       font-size: 3rem;
+//     }  
+//   }
+// }
 
-@media screen and (min-width: 1400px) {
-  nav {
-    font-size: 6rem;
-    .logo {
-      font-size: 7rem;
-    }
-  }
-  .cover-rect {
-    .cover-rect__name {
-      font-size: 11rem;
-    }
-    .cover-rect__job{
-      font-size: 9rem;
-    }
-    .cover-rect__icon {
-      font-size: 6rem;
-    }
-    .cover-rect__place {
-      font-size: 6rem;
-    }  
-  }
-}
+// @media screen and (min-width: 1400px) {
+//   nav {
+//     font-size: 6rem;
+//     .logo {
+//       font-size: 7rem;
+//     }
+//   }
+//   .cover-rect {
+//     .cover-rect__name {
+//       font-size: 11rem;
+//     }
+//     .cover-rect__job{
+//       font-size: 9rem;
+//     }
+//     .cover-rect__icon {
+//       font-size: 6rem;
+//     }
+//     .cover-rect__place {
+//       font-size: 6rem;
+//     }  
+//   }
+// }
 
-@media screen and (min-width: 2000px) {
-  nav {
-    font-size: 8rem;
-    .logo {
-      font-size: 9rem;
-    }
-  }
-  .cover-rect {
-    .cover-rect__name {
-      font-size: 15rem;
-    }
-    .cover-rect__job{
-      font-size: 12rem;
-    }
-    .cover-rect__icon {
-      font-size: 8rem;
-    }
-    .cover-rect__place {
-      font-size: 8rem;
-    }  
-  }
-}
+// @media screen and (min-width: 2000px) {
+//   nav {
+//     font-size: 8rem;
+//     .logo {
+//       font-size: 9rem;
+//     }
+//   }
+//   .cover-rect {
+//     .cover-rect__name {
+//       font-size: 15rem;
+//     }
+//     .cover-rect__job{
+//       font-size: 12rem;
+//     }
+//     .cover-rect__icon {
+//       font-size: 8rem;
+//     }
+//     .cover-rect__place {
+//       font-size: 8rem;
+//     }  
+//   }
+// }

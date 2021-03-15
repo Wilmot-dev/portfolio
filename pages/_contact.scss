@@ -1,0 +1,15 @@
+.contact-page {
+  .contact-page__titlebox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+  .contact-page__icons {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+}

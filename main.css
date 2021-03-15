@@ -69,7 +69,7 @@ nav .logo {
   font-family: "Mr Bedfort";
   color: #D63D3D;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .about-page .about-page__paragraph {
   font-family: "Josefin Slab";
@@ -96,6 +96,26 @@ nav .logo {
   color: #333333;
   list-style: none;
   font-size: 1.25rem;
+}
+
+.contact-page .contact-page__title {
+  font-family: "Mr Bedfort";
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.contact-page .contact-page__icons {
+  color: #D63D3D;
+  opacity: 0.8;
+  font-size: 3rem;
+}
+
+.copy-right-block .copy-right-block__icon {
+  color: #fffdfb;
+}
+.copy-right-block .copy-right-block__words {
+  color: #fffdfb;
+  font-family: "Josefin Slab";
 }
 
 @media screen and (min-width: 740px) {
@@ -195,7 +215,7 @@ nav .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  clip-path: polygon(0 0, 100% 35%, 100% 100%, 0 65%);
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 75%);
   height: 270px;
 }
 .about-page__rect .about-page__paragraph {
@@ -209,11 +229,18 @@ nav .logo {
   box-shadow: 0 0 5px 5px rgba(215, 215, 215, 0.6);
 }
 
+.contact-page__line {
+  background-color: #D63D3D;
+  height: 2px;
+  width: 40%;
+}
+
 .work-box__img {
-  background-color: pink;
+  background-color: #D63D3D;
+  opacity: 0.6;
   height: 135px;
   width: 270px;
-  border: none;
+  border: 0px;
 }
 
 .work-box__btn {
@@ -300,6 +327,18 @@ header {
   justify-self: center;
 }
 
+.copy-right-block {
+  background-color: #D63D3D;
+  box-shadow: 0 0 5px 5px #D63D3D;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-right-block .copy-right-block__words {
+  padding: 5px;
+}
+
 .work-page {
   display: grid;
   grid-template-columns: 1fr;
@@ -355,6 +394,20 @@ header {
 .about-page .about-page__dots {
   text-shadow: 0px 2px #bdbdbd;
   text-align: right;
+}
+
+.contact-page .contact-page__titlebox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.contact-page .contact-page__icons {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
 }
 
 body {

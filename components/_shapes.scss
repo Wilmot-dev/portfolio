@@ -34,9 +34,9 @@
   justify-content: center;
   clip-path: polygon(
     0 0,
-    100% 35%,
+    100% 25%,
     100% 100%,
-    0 65%
+    0 75%
   );
   height: 270px;
   .about-page__paragraph {
@@ -50,3 +50,20 @@
   margin: 15px 30px;
   box-shadow: 0 0 5px 5px $gray-color;
 }
+.contact-page__line {
+  background-color: $red-colour;
+  height: 2px;
+  width: 40%;
+}
+
+// /* Arrow 2 */
+
+// position: absolute;
+// width: 600px;
+// height: 0px;
+// left: 0px;
+// top: 5213.5px;
+
+// /* emily */
+// border: 4px solid #D63D3D;
+// box-sizing: border-box;

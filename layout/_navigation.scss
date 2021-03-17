@@ -1,16 +1,106 @@
-nav{
-  display: flex;
-  justify-content: space-between;
-  .logo {
-    padding-left: 30px;
-  }
-  ul {
-    padding-right: 30px;
-    padding-top: 15px;
-    display: flex;
-    list-style: none;
-    width: 55vw;
-    justify-content: space-between;
-  }
+
+// nav{
+//   display: flex;
+//   justify-content: space-between;
+//   .logo {
+//     padding-left: 30px;
+//   }
+//   ul {
+//     padding-right: 30px;
+//     padding-top: 15px;
+//     display: flex;
+//     list-style: none;
+//     width: 55vw;
+//     justify-content: space-between;
+//   }
+//   position: sticky;
+// }
+
+.navspan {
+  height: 85px; //media queries
+  width: 100%;
+}
+
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .nav {
+  width:300px; //media queries
+	border-radius:5px;
+  background-color: $background-colour;
+	border:3px solid $red-colour;
+	height:80px; //media queries
+
+  &>ul {
+		display:block;
+		opacity:1;
+	}
+  &>.logo {
+		display:none;
+	}
+}
+
+.nav {
   position: sticky;
+  top: 15px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+	margin: 15px auto;
+	width: 80px;
+	height: 80px; //media queries
+	background-color:$red-colour;
+	border: 3px solid transparent;
+	border-radius:50%;
+	overflow: hidden;
+	cursor: pointer;
+	@include transition(all 0.5s ease-in-out);
+
+	.logo {
+		width:30px;
+		margin:35px auto;
+
+	}
+
+	ul {
+		opacity:0;
+    background-color: $background-colour;
+		display:none;
+		@include transition(all 0.5s ease-in-out);
+		list-style-type:none;
+		padding:0;
+		width:300px; //media queries
+		text-align:center;
+		margin-bottom: 0;
+
+		li {
+			display:inline-block;
+			a {
+				display:inline-block;
+				padding: 0px 10px;
+				@include transition(all 0.3s ease-in-out);
+				border:3px solid transparent;
+				border-radius:5px;
+
+				&:hover {
+					border-color: $red-colour;
+				}
+				
+				&:target {
+					border-bottom-color: $red-colour;
+				}
+			}
+		}
+	}
 }

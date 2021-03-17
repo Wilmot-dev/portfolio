@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
-nav {
+.nav {
+  text-decoration:none;
   font-family: $main-font;
-  font-size: 2rem;
+  font-size: 1.75rem;
+  color: $red-colour;
   .logo {
-    color: $red-colour;
+    color: $background-colour;
     font-size: 3rem;
+  }
+  ul {
+    li {
+      a {
+        text-decoration:none;
+        color: $red-colour;
+      }
+    }
   }
 }
 

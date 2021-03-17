@@ -9,16 +9,26 @@
   <script src="https://kit.fontawesome.com/822e3a2b1d.js" crossorigin="anonymous"></script>
   <title>Emily Wilmot</title>
 </head>
-<body>
+<body id="home">
   <!-- nav bar -->
-  <nav>
+  <!-- <nav>
     <p class="logo">ew</p>
     <ul>
       <li class="nav-work">Work</li>
       <li class="nav-about">About</li>
       <li class="nav-connect">Connect</li>
     </ul>
-  </nav>
+  </nav> -->
+  <input type="checkbox" id="menu">
+  <label class="nav" for="menu">
+    <p class="logo">ew</p>
+    <ul>
+      <li class="nav-home"><a href="#home">Home</a></li>
+      <li class="nav-work"><a href="#work">Work</a></li>
+      <li class="nav-about"><a href="#about">About</a></li>
+      <li class="nav-connect"><a href="#connect">Connect</a></li>
+    </ul>
+  </label>
 
   <!-- landing page -->
   <header>
@@ -27,11 +37,12 @@
       <h3 class="cover-rect__job">Software Developer</h3>
       <p class="cover-rect__place"> <i class="fas fa-map-marker-alt cover-rect__icon"></i> LONDON</p>
     </div>
-    <!-- <i class="fas fa-chevron-down cover-page__arrow"></i> -->
   </header>
 
+  <!-- nav span
+  <span class="navspan" id="work"></span> -->
   <!-- work page -->
-  <section class="work-page">
+  <section class="work-page" id="work">
 
     <h1 class="work-page__heading">Work</h1>
 
@@ -96,8 +107,11 @@
     </div>
   </section>
 
+
+  <!-- nav span -->
+  <!-- <span class="navspan" id="about"></span> -->
   <!-- about page -->
-  <section class="about-page">
+  <section class="about-page" id="about">
     <h1 class="about-page__heading">About</h1>
     <div class="about-page__rect">
       <p class="about-page__paragraph">
@@ -131,8 +145,10 @@
     </div>
   </section>
 
+  <!-- nav span -->
+  <!-- <span class="navspan" id="connect"></span> -->
   <!-- contact page -->
-  <section class="contact-page">
+  <section class="contact-page" id="connect">
     <div class="contact-page__titlebox">
       <div class="contact-page__line"></div>
       <h1 class="contact-page__title">Connect</h1>

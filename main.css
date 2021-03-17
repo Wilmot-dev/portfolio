@@ -10,13 +10,19 @@ html {
   font-size: 62.5%;
 }
 
-nav {
+.nav {
+  text-decoration: none;
   font-family: "Mr Bedfort";
-  font-size: 2rem;
-}
-nav .logo {
+  font-size: 1.75rem;
   color: #D63D3D;
+}
+.nav .logo {
+  color: #fffdfb;
   font-size: 3rem;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #D63D3D;
 }
 
 .cover-rect {
@@ -118,69 +124,6 @@ nav .logo {
   font-family: "Josefin Slab";
 }
 
-@media screen and (min-width: 740px) {
-  nav {
-    font-size: 4rem;
-  }
-  nav .logo {
-    font-size: 5rem;
-  }
-
-  .cover-rect .cover-rect__name {
-    font-size: 6rem;
-  }
-  .cover-rect .cover-rect__job {
-    font-size: 5rem;
-  }
-  .cover-rect .cover-rect__icon {
-    font-size: 3rem;
-  }
-  .cover-rect .cover-rect__place {
-    font-size: 3rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  nav {
-    font-size: 6rem;
-  }
-  nav .logo {
-    font-size: 7rem;
-  }
-
-  .cover-rect .cover-rect__name {
-    font-size: 11rem;
-  }
-  .cover-rect .cover-rect__job {
-    font-size: 9rem;
-  }
-  .cover-rect .cover-rect__icon {
-    font-size: 6rem;
-  }
-  .cover-rect .cover-rect__place {
-    font-size: 6rem;
-  }
-}
-@media screen and (min-width: 2000px) {
-  nav {
-    font-size: 8rem;
-  }
-  nav .logo {
-    font-size: 9rem;
-  }
-
-  .cover-rect .cover-rect__name {
-    font-size: 15rem;
-  }
-  .cover-rect .cover-rect__job {
-    font-size: 12rem;
-  }
-  .cover-rect .cover-rect__icon {
-    font-size: 8rem;
-  }
-  .cover-rect .cover-rect__place {
-    font-size: 8rem;
-  }
-}
 /* Rectangle 1 */
 .cover-rect {
   width: 60%;
@@ -252,25 +195,94 @@ nav .logo {
   width: 70%;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
+.navspan {
+  height: 85px;
+  width: 100%;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .nav {
+  width: 300px;
+  border-radius: 5px;
+  background-color: #fffdfb;
+  border: 3px solid #D63D3D;
+  height: 80px;
+}
+#menu:checked ~ .nav > ul {
+  display: block;
+  opacity: 1;
+}
+#menu:checked ~ .nav > .logo {
+  display: none;
+}
+
+.nav {
   position: sticky;
-}
-nav .logo {
-  padding-left: 30px;
-}
-nav ul {
-  padding-right: 30px;
-  padding-top: 15px;
+  top: 15px;
+  z-index: 9999;
   display: flex;
-  list-style: none;
-  width: 55vw;
-  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  margin: 15px auto;
+  width: 80px;
+  height: 80px;
+  background-color: #D63D3D;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+.nav .logo {
+  width: 30px;
+  margin: 35px auto;
+}
+.nav ul {
+  opacity: 0;
+  background-color: #fffdfb;
+  display: none;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.nav ul li {
+  display: inline-block;
+}
+.nav ul li a {
+  display: inline-block;
+  padding: 0px 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+.nav ul li a:hover {
+  border-color: #D63D3D;
+}
+.nav ul li a:target {
+  border-bottom-color: #D63D3D;
 }
 
 header {
-  height: 90vh;
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -340,6 +352,7 @@ header {
 }
 
 .work-page {
+  padding-top: 120px;
   display: grid;
   grid-template-columns: 1fr;
   margin: 10px;
@@ -357,6 +370,9 @@ header {
   justify-self: end;
 }
 
+.about-page {
+  padding-top: 80px;
+}
 .about-page .about-page__heading {
   margin-top: 50px;
   text-align: center;
@@ -396,6 +412,9 @@ header {
   text-align: right;
 }
 
+.contact-page {
+  padding-top: 50px;
+}
 .contact-page .contact-page__titlebox {
   display: flex;
   align-items: center;

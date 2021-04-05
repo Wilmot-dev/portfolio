@@ -6,4 +6,22 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }

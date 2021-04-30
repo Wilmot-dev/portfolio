@@ -28,11 +28,21 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  color: #333333;
+}
+a :visited {
+  color: #333333;
+  text-decoration: none;
+}
+
 .nav {
   text-decoration: none;
   font-family: "Mr Bedfort";
   font-size: 1.75rem;
   color: #D63D3D;
+  box-shadow: 1px 1px 1px 1px #bebebe;
 }
 .nav .logo {
   color: #fffdfb;
@@ -50,6 +60,7 @@ body {
   font-size: 3rem;
   font-family: "Mr Bedfort";
   color: #D63D3D;
+  text-shadow: 1px 1px #9c9c9c;
 }
 .cover-rect .cover-rect__job {
   font-size: 2rem;
@@ -70,18 +81,19 @@ body {
   font-size: 2rem;
   text-align: center;
   font-weight: 400;
+  text-shadow: 0.5px 0.5px #9c9c9c;
 }
 .work-page .work-box .work-box__title {
   font-family: "Josefin Slab";
   color: #333333;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 1.5rem;
 }
 .work-page .work-box .work-box__description {
   font-family: "Josefin Slab";
   color: #333333;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .work-page .work-box .work-box__icon {
   color: #D63D3D;
@@ -92,8 +104,9 @@ body {
 .about-page .about-page__heading {
   font-family: "Mr Bedfort";
   color: #D63D3D;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 2rem;
+  text-shadow: 0.5px 0.5px #9c9c9c;
 }
 .about-page .about-page__paragraph {
   font-family: "Josefin Slab";
@@ -127,6 +140,7 @@ body {
   color: #333333;
   font-size: 2rem;
   font-weight: 400;
+  text-shadow: 0.5px 0.5px #9c9c9c;
 }
 .contact-page .contact-page__icons {
   color: #D63D3D;
@@ -317,10 +331,7 @@ body {
 }
 
 .work-box__img {
-  background-color: #D63D3D;
-  opacity: 0.6;
-  height: 135px;
-  width: 270px;
+  width: 80%;
   border: 0px;
 }
 
@@ -518,6 +529,7 @@ header {
     grid-row: 3/10;
     align-self: center;
     justify-self: center;
+    padding-left: 10px;
   }
   .work-box--right .work-box__btn {
     grid-column: 2/3;
@@ -564,6 +576,7 @@ header {
     grid-row: 3/10;
     align-self: center;
     justify-self: center;
+    padding-right: 10px;
   }
   .work-box--left .work-box__btn {
     grid-column: -2/-3;

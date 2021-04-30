@@ -1,6 +1,4 @@
 .work-box__img {
-  background-color: pink;
-  height: 135px;
-  width: 270px;
-  border: none;
+  width: 80%;
+  border: 0px;
 }

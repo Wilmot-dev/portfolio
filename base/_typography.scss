@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mr+Bedfort&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 
+a {
+  text-decoration: none;
+  color: $black-color;
+  :visited {
+    color: $black-color;
+    text-decoration: none;
+  }
+}
+
 .nav {
   text-decoration:none;
   font-family: $main-font;
   font-size: 1.75rem;
   color: $red-colour;
+  box-shadow: 1px 1px 1px 1px rgb(190, 190, 190);
   .logo {
     color: $background-colour;
     font-size: 3rem;
@@ -27,6 +37,7 @@
     font-size: 3rem;
     font-family: $main-font;
     color: $red-colour;
+    text-shadow: 1px 1px rgb(156, 156, 156);
   }
   .cover-rect__job{
     font-size: 2rem;
@@ -49,19 +60,20 @@
     font-size: 2rem; 
     text-align: center;
     font-weight: 400;
+    text-shadow: 0.5px 0.5px rgb(156, 156, 156);
   }
   .work-box {
     .work-box__title {
       font-family: $second-font;
       color: $black-color;
-      font-weight: 400;
+      font-weight: 900;
       font-size: 1.5rem;
     }
     .work-box__description {
       font-family: $second-font;
       color: $black-color;
       font-weight: 400;
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
     .work-box__icon {
       color: $red-colour;
@@ -75,8 +87,9 @@
   .about-page__heading {
     font-family: $main-font;
     color: $red-colour;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 2rem;
+    text-shadow: 0.5px 0.5px rgb(156, 156, 156);
   }
   .about-page__paragraph {
     font-family: $second-font;
@@ -112,6 +125,7 @@
     color: $black-color;
     font-size: 2rem; 
     font-weight: 400;
+    text-shadow: 0.5px 0.5px rgb(156, 156, 156);
   }
   .contact-page__icons {
     color: $red-colour;

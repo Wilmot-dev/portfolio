@@ -142,10 +142,10 @@ a :visited {
   font-weight: 400;
   text-shadow: 0.5px 0.5px #9c9c9c;
 }
-.contact-page .contact-page__icons {
+.contact-page .contact-page__icons a {
   color: #D63D3D;
   opacity: 0.8;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .copy-right-block .copy-right-block__icon {

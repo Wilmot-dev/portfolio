@@ -128,9 +128,11 @@ a {
     text-shadow: 0.5px 0.5px rgb(156, 156, 156);
   }
   .contact-page__icons {
-    color: $red-colour;
-    opacity: 0.8;
-    font-size: 3rem;
+    a {
+      color: $red-colour;
+      opacity: 0.8;
+      font-size: 4rem;
+    }
   }
 }
 
